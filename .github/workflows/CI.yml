@@ -195,7 +195,7 @@ jobs:
           xcodebuild build -project "${{ env.PROJECT_NAME }}" -scheme "${{ env.SCHEME_NAME }}" -destination "platform=macOS,arch=x86_64,variant=Mac Catalyst" -configuration Release | xcpretty -c
           rm -rf ~/Library/Developer/Xcode/DerivedData/
       
-  Build xcframework:
+  Build_xcframework:
     name: "Build XCFramework"
     runs-on: macos-11
     env:
