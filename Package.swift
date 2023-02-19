@@ -29,7 +29,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .binaryTarget(
             name: "SDWebImage",
-            url: "https://github.com/bluepi0j/SDWebImage/releases/download/1.0/SDWebImage.xcframework.zip",
+            url: "https://github.com/bluepi0j/SDWebImage/releases/download/1.2/SDWebImage.xcframework.zip",
             checksum: ""
         ),
 //        .binaryTarget(
