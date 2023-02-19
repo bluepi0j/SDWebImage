@@ -29,8 +29,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .binaryTarget(
             name: "SDWebImage",
-            url: "https://github.com/bluepi0j/SDWebImage/releases/download/1.2/SDWebImage.xcframework.zip",
-            checksum: ""
+            url: "https://github.com/bluepi0j/SDWebImage/releases/download/1.3/SDWebImage.xcframework.zip",
+            checksum: "88f8f13dc29e103cfc7196b82451d4f5edbb2f8044c866e18e05332e586f082a"
         ),
 //        .binaryTarget(
 //            name: "SDWebImage",
