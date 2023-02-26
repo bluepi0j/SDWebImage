@@ -24,8 +24,6 @@ xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -
 xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -destination generic/platform=macOS -archivePath ".build/archives/SDWebImageMapKit_macOS" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -destination generic/platform=tvOS -archivePath ".build/archives/SDWebImageMapKit_tvOS" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -destination "generic/platform=tvOS Simulator" -archivePath ".build/archives/SDWebImageMapKit_tvOS_Simulator" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
-xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -destination generic/platform=watchOS -archivePath ".build/archives/SDWebImageMapKit_watchOS" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
-xcodebuild archive -project "SDWebImage.xcodeproj"  -scheme "SDWebImageMapKit" -destination "generic/platform=watchOS Simulator" -archivePath ".build/archives/SDWebImageMapKit_watchOS_Simulator" SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 xcodebuild -create-xcframework \
     -framework .build/archives/SDWebImageMapKit_iOS.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
     -framework .build/archives/SDWebImageMapKit_iOS_Simulator.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
@@ -33,6 +31,4 @@ xcodebuild -create-xcframework \
     -framework .build/archives/SDWebImageMapKit_macOS.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
     -framework .build/archives/SDWebImageMapKit_tvOS.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
     -framework .build/archives/SDWebImageMapKit_tvOS_Simulator.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
-    -framework .build/archives/SDWebImageMapKit_watchOS.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
-    -framework .build/archives/SDWebImageMapKit_watchOS_Simulator.xcarchive/Products/Library/Frameworks/SDWebImageMapKit.framework \
     -output .build/archives/SDWebImageMapKit.xcframework
